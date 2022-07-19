@@ -1,0 +1,126 @@
+:root{
+    --firstColor: hsl(172, 67%, 45%);
+    --VeryDarkcyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Monospace :url(https://fonts.google.com/specimen/Space+Mono);
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+body{
+    background-color: var(--LightGrayishCyan);
+  
+  display: flex;
+  flex-direction: column;
+
+}
+
+body header{
+    text-align: center;
+    color: var(--DarkGrayishCyan);
+}
+
+body main div.calcContainer{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: var(--White);
+    margin: 0 auto;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 1.5em;
+}
+
+div.calcContainer section.first{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#bill{
+    height: 2em;
+    
+    border: 2px solid red;
+}
+
+div.tip > div, input#custom{
+    padding: .5em 1em;
+    width: 4em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--VeryDarkcyan);
+    color: var(--White);
+    font-weight: 400;
+
+
+} 
+
+div.calcContainer section.first div.tip{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+
+    gap: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main div.calcContainer section.second{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--VeryDarkcyan);
+    padding: 1.5em;
+    border-radius: 10px;
+    color: var(--White);
+}
+span{
+    font-size: 12px;
+    opacity: .7;
+}
+main div.calcContainer section.second .tipAmount{
+    display: flex;
+ gap: 3em;
+
+    justify-content: space-between;
+}
+
+section.second div.tipAmount p.amount{
+    font-size: 30px;
+    padding-top: 0;
+
+}
+
+section.second div.tipTotal p.amount{
+    font-size: 30px;
+}
+
+main div.calcContainer section.second .tipTotal{
+ display: flex;
+ justify-content: space-between;
+ gap: 3em;
+ margin-top: 1em;
+}
+div.calcContainer section.second button{
+    align-content: flex;
+    justify-self: end;
+    margin-top: 6.8em;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--LightGrayishCyan);
+    color: var(--VeryDarkcyan);
+    font-weight: 700;
+    
+}

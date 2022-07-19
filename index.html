@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>SPLI</h2>
+        <h2>TTER</h2>
+    </header>
+    <main>
+       <div class="calcContainer">
+        <section class="first">
+            <label for="bill"> Bill</label>
+            <input type="number" name="bill" id="bill">
+
+            <div class="tip">
+                <div class="tip1">5%</div>
+                <div class="tip2">10%</div>
+                <div class="tip3">15%</div>
+                <div class="tip4">25%</div>
+                <div class="tip5">50%</div>
+                <input type="text" name="custom" id="custom">
+            </div>
+
+            <div class="people">
+            <label for="people">Number of people</label>
+            <p> Can't be zero</p>
+            </div>
+            <input type="number" name="people" id="people">
+
+        </section>
+        <section class="second">
+            <div class="tipAmount">
+                <p>Tip Amount <br> <span>/ person</span></p>
+                <p class="amount"> $0.00</p>
+            </div>
+            <div class="tipTotal">
+                <p>Total <br> <span>/ person</span></p>
+                <p class="amount "> $0.00</p>
+            </div>
+
+            <button type="reset">RESET</button>
+
+        </section>
+       </div>
+
+    </main>
+</body>
+</html>

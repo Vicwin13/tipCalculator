@@ -27,11 +27,15 @@ body{
 
 }
 
+
 body header{
     text-align: center;
     color: var(--DarkGrayishCyan);
+    margin: 2em;
 }
-
+body header h2{
+    letter-spacing: 8px;
+}
 body main div.calcContainer{
     display: flex;
     justify-content: center;
@@ -42,7 +46,10 @@ body main div.calcContainer{
     width: fit-content;
     padding: 1.5em;
 }
-
+div.firstHolder{
+    display: flex;
+    flex-direction: column;
+}
 div.calcContainer section.first{
     display: flex;
     flex-direction: column;
@@ -50,28 +57,80 @@ div.calcContainer section.first{
     
 }
 
-#bill{
+#bill, #people{
     height: 2em;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--VeryLightGrayishCyan);
+    margin-top: .3em;
+    padding: .5em;
+    text-align: right;
+   
     
-    border: 2px solid red;
+}
+div.tipContain{
+    margin-top: 1em;
+   
 }
 
-div.tip > div, input#custom{
-    padding: .5em 1em;
+div.tip > div{
+    padding: .7em .7em;
     width: 4em;
     border: none;
     border-radius: 5px;
     background-color: var(--VeryDarkcyan);
     color: var(--White);
     font-weight: 400;
-
-
+    text-align: center;
 } 
 
-div.calcContainer section.first div.tip{
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+div.tip input#custom{
+    border: none;
+    padding: 2px 4px;
+    text-align: center;
+    background-color: var(--VeryLightGrayishCyan);
+    border-radius: 5px;
+    width: 4em;    
+}
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  
+}
+
+
+div.firstHolder, div.secondHolder{
+    position: relative;
+}
+
+div.secondHolder{
+    display: flex;
+    flex-direction: column;
+}
+div.secondHolder i{
+    
+    width: fit-content;
+    position: absolute;
+    top: .8em;
+    left: .5em;
+}
+div.firstHolder i{
+    width: fit-content;
+    position: absolute;
+    top: 1.6em;
+    left: .3em;
+}
+
+div.calcContainer section.first label {
+    color: var(--DarkGrayishCyan);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+div.calcContainer section.first div.tip{
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
     gap: .5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -91,8 +150,7 @@ span{
 }
 main div.calcContainer section.second .tipAmount{
     display: flex;
- gap: 3em;
-
+    gap: 3em;
     justify-content: space-between;
 }
 
@@ -100,6 +158,28 @@ section.second div.tipAmount p.amount{
     font-size: 30px;
     padding-top: 0;
 
+}
+section.second p.tipText{
+    
+    font-size: 15px;
+}
+
+.calcContainer section.first div.people{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.calcContainer section.first div.people label{
+ color: var(--DarkGrayishCyan);
+ font-size: 13px;
+ font-weight: 700;
+}
+.calcContainer section.first div.people p{
+ color: blue;
+ font-size: 13px;
+ 
 }
 
 section.second div.tipTotal p.amount{

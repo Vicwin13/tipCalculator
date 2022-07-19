@@ -15,32 +15,41 @@
     <main>
        <div class="calcContainer">
         <section class="first">
-            <label for="bill"> Bill</label>
-            <input type="number" name="bill" id="bill">
 
+            <div class="firstHolder">
+            <label for="bill"> Bill</label>
+            <i><img src="/images/icon-dollar.svg" alt=""></i>
+            <input type="number" name="bill" id="bill">
+        </div>
+
+            <div class="tipContain">
+            <label for="tip">Select Tip %</label>
             <div class="tip">
                 <div class="tip1">5%</div>
                 <div class="tip2">10%</div>
                 <div class="tip3">15%</div>
                 <div class="tip4">25%</div>
                 <div class="tip5">50%</div>
-                <input type="text" name="custom" id="custom">
+                <input type="text" placeholder="Custom" name="custom" id="custom">
             </div>
+        </div>
 
-            <div class="people">
+        <div class="people">
             <label for="people">Number of people</label>
-            <p> Can't be zero</p>
-            </div>
+            <p id="errorMessage"></p>
+        </div>
+        <div class="secondHolder">
+            <i><img src="/images/icon-person.svg" alt=""></i>
             <input type="number" name="people" id="people">
-
+        </div>
         </section>
         <section class="second">
             <div class="tipAmount">
-                <p>Tip Amount <br> <span>/ person</span></p>
+                <p class="tipText">Tip Amount <br> <span>/ person</span></p>
                 <p class="amount"> $0.00</p>
             </div>
             <div class="tipTotal">
-                <p>Total <br> <span>/ person</span></p>
+                <p class="tipText">Total <br> <span>/ person</span></p>
                 <p class="amount "> $0.00</p>
             </div>
 

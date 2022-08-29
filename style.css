@@ -70,20 +70,7 @@ div.calcContainer section.first {
 
 }
 
-#tipPrice::before {
-    content: "$";
-    position: absolute;
-    left: 125px;
-}
 
-#totalPrice::before {
-    content: "$";
-    position: absolute;
-    left: 125px;
-
-
-
-}
 
 #bill,
 #people {
@@ -113,6 +100,22 @@ div.tipContain {
     font-weight: 400;
     text-align: center;
     cursor: pointer;
+}
+
+.tipping.active {
+    background-color: var(--firstColor);
+    color: var(--White);
+}
+
+#errorMessage {
+    color: red;
+    font-size: .5rem;
+    font-weight: 600;
+    display: none;
+}
+
+#errorMessage.active {
+    display: block;
 }
 
 div.tip input#custom {
